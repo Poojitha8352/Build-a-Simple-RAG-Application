@@ -2,33 +2,33 @@
 Build a Simple RAG (Retrieval-Augmented Generation) application to query documents efficiently. Load PDFs, split text into chunks, and use a vector store to retrieve relevant information. Integrate a language model to generate precise answers from retrieved content.
 📄 Paracetamol PDF QA System
 
-A Streamlit web app that allows users to upload a PDF about Paracetamol and ask questions. Powered by LangChain, OpenAI embeddings, and FAISS for fast and accurate retrieval-augmented answers (RAG).
+An AI-powered PDF Question-Answering web app built with Streamlit and LangChain that allows users to upload a PDF about Paracetamol and get instant answers.
 
-🚀 Features
+🌟 Key Highlights
 
-Upload any PDF document about Paracetamol.
+Interactive PDF Upload: Users can upload any PDF about Paracetamol.
 
-Automatically splits PDF text into chunks for better search.
+Smart Text Splitting: Automatically splits text into manageable chunks.
 
-Generates embeddings using OpenAI.
+AI-Powered Retrieval: Uses OpenAI embeddings + FAISS vector database for fast and accurate answers.
 
-Retrieves and answers questions using a RAG pipeline.
+User-Friendly Interface: Built with Streamlit for an easy-to-use web experience.
 
-Interactive web interface built with Streamlit.
+RAG Pipeline: Retrieval-Augmented Generation ensures answers are contextually relevant.
 
 🛠️ Technologies Used
 
 Python 3.10+
 
-Streamlit – Web app interface
+Streamlit – Interactive web app
 
-LangChain – RAG framework
+LangChain – RAG framework for AI pipelines
 
-FAISS – Vector database for fast retrieval
+FAISS – Efficient vector database for retrieval
 
-OpenAI Embeddings – Converts text chunks into vectors
+OpenAI Embeddings – Converts text chunks to vector representations
 
-PyPDF2 – Reads PDF files
+PyPDF2 – PDF text extraction
 
 📦 Installation
 
@@ -53,11 +53,28 @@ Set your OpenAI API Key:
 
 export OPENAI_API_KEY="your_api_key_here"    # Linux/Mac
 setx OPENAI_API_KEY "your_api_key_here"      # Windows
-🖥️ Running the App
+🖥️ How to Run
 streamlit run paracetamol.py
 
-Upload a PDF file about Paracetamol.
+Upload your PDF about Paracetamol.
 
-Type a question in the input box.
+Ask any question in the input box.
 
-Get answers retrieved from your PDF content.
+Get accurate, context-aware answers instantly.
+
+🧩 Project Structure
+paracetamol-pdf-qa/
+│
+├─ paracetamol.py       # Main Streamlit application
+├─ requirements.txt     # Dependencies
+├─ README.md            # Project documentation
+└─ sample_pdfs/         # Optional sample PDF files
+⚡ Future Improvements
+
+Support multiple PDF uploads at once.
+
+Advanced prompts for more natural answers.
+
+Downloadable answers or summaries.
+
+Enhanced UI with multi-tab support for different sections.
